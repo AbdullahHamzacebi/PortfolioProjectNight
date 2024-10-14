@@ -15,3 +15,25 @@ namespace PortfolioProjectNight.Controllers
         }
     }
 }
+/* 
+ DbFirst
+ CodeFirst
+ AspNet Core N tier arc.
+ Identity
+ Api
+ Rapid Api
+ Chain of Resp. (Design Pat)
+ CQER & Mediator
+ Mongo Db
+ PostreSQL
+ Onion Arc.
+ Jwt (Spotify)
+ Ajax - Jquery
+ SignalR
+ Dapper
+ Mikroservis
+ Redis 
+ ElasticSearch
+ IdentityModel
+
+ */
