@@ -1,0 +1,55 @@
+﻿@model List<PortfolioProjectNight.Models.Skill>
+
+
+@{
+    ViewBag.Title = "SkillList";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4">Yetenek Listesi ve İşlemleri</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Id</th>
+        <th>Başlık</th>
+        <th>Değer</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SkillId</td>
+            <td>@item.SkillName</td>
+            <td>@item.Rate</td>
+            <td><a href="/Skill/DeleteSkill/@item.SkillId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Skill/UpdateSkill/@item.SkillId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<a href="/Skill/CreateSkill/" class="btn btn-info">Yeni Yetenek Girişi</a>
+
+@* 
+    
+
+Grup Projeleri
+
+ 1- Uçak Bileti Rezervasyonu
+ 2- Booking 
+ 3- Sosyal Medya Uygulaması
+ 4- Macfit Klonu
+ 5- OBS sistemi
+ 6- Online Eğitim Platformu
+ 7- Bankacılık Uygulaması
+ 8- Borsa Takip (Dashbord)
+ 9- Etkinlik Organizasyon
+ 10- Hayvan Sahiplendirme
+ 11- Gratis Klonu 
+ 12- Film Dizi Yorum Projesi (Ekşi Sözlük)
+ 13- Maçkolik
+ 14- Sağlık MHRS
+
+*@
